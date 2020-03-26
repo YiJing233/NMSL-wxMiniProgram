@@ -1,0 +1,57 @@
+<view class="container">
+  <input name="name" class="main-input" placeholder="请输入你的抽象话" selection-start="-1" selection-end="-1" cursor="-1" bindinput="sentenceInput">
+  </input>
+
+  <text class="mdui-textfield-helper">{{textfieldhelper}}</text>
+
+  <!-- <text class="level" id="levelight">轻度抽象</text>
+  <text class="level" id="levelem">重度抽象</text> -->
+
+  <text class="main-input" selectable="true">{{result}}</text>
+
+  <view class="select">
+    <view class="section">
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+          皮肤选择：{{array[index]}}
+        </view>
+      </picker>
+    </view>
+    <!-- <input type="checkbox" id="checkda" />
+         将所有“大”转换为“带”
+         <input type="checkbox" id="checkai" />
+         爱"转化为"i"，而不是"💓"
+         <input type="checkbox" id="checkye" />
+         "我"转化为"👴"         -->
+  </view>
+
+  <view class="button-go">
+    <text class="button-text" bindtap="main"> 给{{array[index]}}变</text>
+  </view>
+
+  <view class="button-go">
+    <text class="button-text" bindtap="copy">复制到剪贴板</text>
+  </view>
+
+  <view class="developermotto">
+    <text class="developer-motto">{{motto}}Powered by JotangStudio</text>
+  </view>
+
+  <!-- <view class="page">
+    <view class="page__bd">
+      <view class="section section_gap">
+        <radio-group class="radio-group" bindchange="radioChange">
+          <radio class="radio" bindtap="bindtap1" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+            <text>{{item.value}}</text>
+          </radio>
+        </radio-group>
+      </view>
+    </view>
+  </view> -->
+  <block wx:for="{{dataList}}" wx:key="item">
+    <view class='item-container'>
+      <!--序列号  -->
+      <text>{{item.id}}</text>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,125 @@
+/**index.wxss**/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  font-family: "微软雅黑"
+}
+
+.main-input {
+  cursor: auto;
+  display: block;
+  padding-left: 10rpx;
+  width: 100%;
+  height: 100%;
+  flex: 0.95;
+  font-size: 35rpx;
+  font-family: "微软雅黑";
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 1rpx solid rgba(0,0,0,.87);
+  box-shadow: 0 1rpx 0 0 rgba(0,0,0,.87);    
+}
+
+.mdui-textfield {
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    overflow: hidden;
+}
+
+.mdui-radio {
+    position: relative;
+    display: inline-block;
+    height: 36px;
+    padding-left: 36px;
+    line-height: 36px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.mdui-checkbox {
+    position: relative;
+    display: inline-block;
+    height: 36px;
+    padding-left: 36px;
+    line-height: 36px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button-go {
+  display: flex;
+  margin-top: 250rpx;
+  margin:0;
+  border: 1px solid #EA5A3C;
+  padding-right: 8px;
+  padding-left: 8px;
+  background: #EA5A3C;
+  width: 220rpx;
+  height: 80rpx;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.button-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.button-copy {
+  display: flex;
+  margin-top: 250rpx;
+  margin:0;
+  border: 1px solid #EA5A3C;
+  padding-right: 8px;
+  padding-left: 8px;
+  background: #EA5A3C;
+  width: 220rpx;
+  height: 80rpx;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.section{
+  margin: 50rpx 0;
+  font-size: 30rpx;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+} 
+
+.usermotto {
+  margin-top: 10rpx;
+  margin-bottom: 10px;
+}
+
+.item-container{
+ border: 5px solid #ffffff;
+  height: 110rpx;
+  line-height: 110rpx;
+  margin-bottom:4rpx;
+  text-align: center; 
+  background: #f6c8fb;
+  color: #ffffff;
+  
+}
