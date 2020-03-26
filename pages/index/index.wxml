@@ -1,13 +1,13 @@
 <view class="container">
-  <input name="name" class="main-input" placeholder="请输入你的抽象话" selection-start="-1" selection-end="-1" cursor="-1" bindinput="sentenceInput">
+  <input name="name" class="main-input" placeholder="请输入宁的抽象话" selection-start="-1" selection-end="-1" cursor="-1" bindinput="sentenceInput">
   </input>
 
-  <text class="mdui-textfield-helper">{{textfieldhelper}}</text>
+  <text class="input-helper">{{textfieldhelper}}</text>
 
   <!-- <text class="level" id="levelight">轻度抽象</text>
   <text class="level" id="levelem">重度抽象</text> -->
 
-  <text class="main-input" selectable="true">{{result}}</text>
+  <text class="main-input"> 翻译结果: <text selectable="true">{{result}}</text></text>
 
   <view class="select">
     <view class="section">
@@ -37,21 +37,4 @@
     <text class="developer-motto">{{motto}}Powered by JotangStudio</text>
   </view>
 
-  <!-- <view class="page">
-    <view class="page__bd">
-      <view class="section section_gap">
-        <radio-group class="radio-group" bindchange="radioChange">
-          <radio class="radio" bindtap="bindtap1" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
-            <text>{{item.value}}</text>
-          </radio>
-        </radio-group>
-      </view>
-    </view>
-  </view> -->
-  <block wx:for="{{dataList}}" wx:key="item">
-    <view class='item-container'>
-      <!--序列号  -->
-      <text>{{item.id}}</text>
-    </view>
-  </block>
 </view>
